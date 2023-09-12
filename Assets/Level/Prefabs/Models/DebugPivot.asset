@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60a00afbfc6541149f5769e36a711988, type: 3}
+  m_Name: DebugPivot
+  m_EditorClassIdentifier: 
+  <Settings>k__BackingField:
+    <StartPosition>k__BackingField:
+      Yaw: 0
+      Pitch: 0.33
+      Radius: 0.3
+    _limitations:
+    - rid: 6632461114136854528
+    - rid: 6632461114136854530
+  references:
+    version: 2
+    RefIds:
+    - rid: 6632461114136854528
+      type: {class: LimitRadius, ns: Focus.CameraLimitations, asm: Assembly-CSharp}
+      data:
+        _minRadius: 0.2
+        _maxRadius: 0.6
+    - rid: 6632461114136854530
+      type: {class: LimitPitchDefault, ns: Focus.CameraLimitations, asm: Assembly-CSharp}
+      data: 
