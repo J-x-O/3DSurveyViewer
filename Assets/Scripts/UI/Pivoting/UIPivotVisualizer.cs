@@ -49,7 +49,7 @@ namespace UI {
             }
             _pivots.Clear();
             
-            foreach (IFocusable focusPoint in _manager.ActiveGroup.FocusPoints) {
+            foreach (IFocusable focusPoint in _manager.ActiveGroup.SecondaryFocus) {
                 UIPivotRepresentation pivot = Instantiate(_prefab, transform);
                 _pivots.Add(pivot);
                 

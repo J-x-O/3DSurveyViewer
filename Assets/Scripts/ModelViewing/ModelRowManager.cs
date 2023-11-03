@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Beta.Devtools;
 using Focus;
 using JescoDev.Utility.EventUtility.EventUtility;
 using UnityEngine;
@@ -12,23 +13,23 @@ namespace ModelViewing {
         public event Action OnFinish;
         
         [SerializeField] private PivotCameraMover _mover;
-        [SerializeField] private FocusPointGroup[] _prefabs;
-        [SerializeField] private float _distance;
+        [SerializeField] private Optional<float> _distance;
         
         public FocusPointGroup ActiveGroup => _instances[CurrentIndex];
-        private FocusPointGroup[] _instances;
+        public FocusPointGroup[] Instances => _instances;
+        [SerializeField] private FocusPointGroup[] _instances;
         public int CurrentIndex { get; private set; }
 
-        public void Awake() {
-            _instances = new FocusPointGroup[_prefabs.Length];
-            for (int index = 0; index < _prefabs.Length; index++) {
-                _instances[index] = Instantiate(_prefabs[index], transform);
-                _instances[index].transform.localPosition = Vector3.right * _distance * index;
+        public void OnValidate() {
+            if (!_distance.Enabled) return;
+            for (int index = 0; index < _instances.Length; index++) {
+                if (_instances[index] == null) continue;
+                _instances[index].transform.localPosition = Vector3.right * _distance.Value * index;
             }
         }
         
         public void Start() {
-            ApplyFocusable(0);
+            EnableValidFocusPoints(0);
             _mover.InstantJump(ActiveGroup.PrimaryFocus);
         }
 
@@ -38,13 +39,13 @@ namespace ModelViewing {
                 OnFinish.TryInvoke();
                 return;
             }
-            ApplyFocusable(CurrentIndex);
+            EnableValidFocusPoints(CurrentIndex);
             OnNewSet.TryInvoke();
             _mover.StartTransition(ActiveGroup.PrimaryFocus);
         }
         
-        private void ApplyFocusable(int index) {
-            for (int i = 0; i < _prefabs.Length; i++) {
+        private void EnableValidFocusPoints(int index) {
+            for (int i = 0; i < _instances.Length; i++) {
                 // can only focus selected
                 foreach (IFocusable focusPoint in _instances[index].FocusPoints) {
                     focusPoint.IsFocusable = i == CurrentIndex;

@@ -15,6 +15,7 @@ namespace Focus {
         [Header("Settings")]
         [SerializeField] private float _sensitivity = 0.5f;
         [SerializeField] private float _zoomSpeed = 0.3f;
+        public float TransitionTime => _transitionTime;
         [SerializeField] private float _transitionTime = 0.5f;
         
         // focus data, where is our camera pointed
@@ -32,6 +33,7 @@ namespace Focus {
         
         public void InstantJump(IFocusable newFocus) {
             if(newFocus == null) return;
+            CurrentFocus?.HandleUnfocus();
             CurrentFocus = newFocus;
             _sphericalPosition = newFocus.Settings.StartPosition;
             _targetCamPosition = newFocus.WorldPosition;
@@ -75,8 +77,8 @@ namespace Focus {
             
             Vector2 rotation = deltaPosition * _sensitivity;
 
-            _sphericalPosition.Yaw += rotation.x * Mathf.Deg2Rad;
-            _sphericalPosition.Pitch += rotation.y * Mathf.Deg2Rad;
+            _sphericalPosition.Yaw -= rotation.x * Mathf.Deg2Rad;
+            _sphericalPosition.Pitch -= rotation.y * Mathf.Deg2Rad;
         }
 
         private void UpdateRadius(){
@@ -92,11 +94,12 @@ namespace Focus {
         }
 
         private void ApplyCameraPosition(Vector3 worldPos, SphericalPosition cameraPosition) {
-            transform.position = worldPos - cameraPosition.ToCartesian();
+            transform.position = worldPos + cameraPosition.ToCartesian();
             transform.LookAt(worldPos);
         }
 
         private IEnumerator Transition(IFocusable newFocus) {
+            CurrentFocus?.HandleUnfocus();
             CurrentFocus = newFocus;
             SphericalPosition startPosition = _sphericalPosition;
             Vector3 startWorld = _targetCamPosition;

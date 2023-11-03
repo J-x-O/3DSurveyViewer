@@ -9,6 +9,7 @@ using UnityEngine.UI;
 namespace UI {
     public class UIPivotRepresentation : MonoBehaviour {
 
+        [SerializeField] private CanvasGroup _group;
         [SerializeField] private Image _image;
         [SerializeField] private Button _button;
         [SerializeField] private float _fadeDuration = 0.25f;
@@ -26,16 +27,15 @@ namespace UI {
         }
 
         private void Start() {
-            float alpha = _image.color.a;
-            _image.color = new Color(1, 1, 1, 0);
-            _fadeTween = SmoothBrainTween.Value(0, alpha, _fadeDuration)
-                .SetOnUpdate(value => _image.color = new Color(1, 1, 1, value));
+            _group.alpha = 0;
         }
         
         public void Update() {
             if (_target is not MonoBehaviour mono) return;
             Vector3 screenPos = _camera.Camera.WorldToScreenPoint(mono.transform.position);
             transform.position = screenPos;
+            float targetAlpha = _target.IsSelected || _dying ? 0 : 1;
+            _group.alpha = Mathf.MoveTowards(_group.alpha, targetAlpha, Time.deltaTime / _fadeDuration);
         }
 
         public void BindToObject(PivotCameraMover cam, IFocusable target) {
@@ -50,10 +50,7 @@ namespace UI {
         public void Die() {
             if(_dying) return;
             _dying = true;
-            SmoothBrainTween.Cancel(_fadeTween);
-            SmoothBrainTween.Value(_image.color.a, 0, _fadeDuration)
-                .SetOnUpdate(value => _image.color = new Color(1, 1, 1, value))
-                .SetOnFinish(() => Destroy(gameObject));
+            Destroy(gameObject, _fadeDuration);
         }
     }
 }

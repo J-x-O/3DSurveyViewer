@@ -15,7 +15,7 @@ namespace Focus {
             Vector3 result = new Vector3();
             result.x = Mathf.Sin(Yaw) * Mathf.Cos(Pitch);
             result.y = Mathf.Sin(Pitch);
-            result.z = Mathf.Cos(Yaw) * Mathf.Cos(Pitch);
+            result.z = - Mathf.Cos(Yaw) * Mathf.Cos(Pitch);
             return (result * Radius);
         }
 
