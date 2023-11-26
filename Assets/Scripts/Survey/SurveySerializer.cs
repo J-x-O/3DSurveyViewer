@@ -41,7 +41,7 @@ namespace Survey {
 
         private void HandleHandlersSpawned() {
             WriteData();
-            foreach (SurveyHandler handler in _handler.Handlers) {
+            foreach (SurveyQuestionHandler handler in _handler.QuestionHandlers) {
                 handler.OnValueChanged += Reevaluate;
             }
             Reevaluate();
@@ -56,7 +56,7 @@ namespace Survey {
 
         private void Reevaluate() {
             _currentData = _handler.Title + "\n\n" +
-                string.Join("\n", _handler.Handlers
+                string.Join("\n", _handler.QuestionHandlers
                     .Select(handler => handler.Question + "\n" + handler.ExtractEnteredData()))
                 + "\n\n";
         }

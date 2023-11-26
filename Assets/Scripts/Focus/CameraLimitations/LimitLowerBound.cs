@@ -8,7 +8,7 @@ namespace Focus.CameraLimitations {
         
         [SerializeField] private float _lowerBound;
 
-        public SphericalPosition Apply(SphericalPosition position) {
+        public SphericalPosition Apply(SphericalPosition position, Vector3 worldPosition) {
             float height = position.ToCartesian().y;
             if (height < _lowerBound)
                 position.Pitch = Mathf.Asin((_lowerBound) / position.Radius);

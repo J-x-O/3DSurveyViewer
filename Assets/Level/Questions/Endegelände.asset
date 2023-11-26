@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 321853fb0c204551965bf8acfefab9cd, type: 3}
+  m_Name: "Endegel\xE4nde"
+  m_EditorClassIdentifier: 
+  _questions:
+  - rid: 3882384442899562513
+  - rid: 3882384442899562514
+  - rid: 3882384442899562515
+  - rid: 3882384442899562516
+  - rid: 3882384442899562517
+  - rid: 3882384442899562518
+  references:
+    version: 2
+    RefIds:
+    - rid: 3882384442899562513
+      type: {class: SurveyLabel, ns: Survey, asm: Assembly-CSharp}
+      data:
+        <Text>k__BackingField: Zum Abschluss noch einige kurze Fragen zum Wissensabgleich.
+    - rid: 3882384442899562514
+      type: {class: SurveyQuestionLinearScale, ns: Survey, asm: Assembly-CSharp}
+      data:
+        <Question>k__BackingField: "Wie gro\xDF ist Ihr Interesse allgemein an historischen
+          Architekturstilen? Ich bin..."
+        <Optional>k__BackingField: 0
+        <From>k__BackingField: 1
+        <LabelFrom>k__BackingField:
+          Enabled: 1
+          Value: "\xDCberhaupt nicht interessiert."
+        <To>k__BackingField: 5
+        <LabelTo>k__BackingField:
+          Enabled: 1
+          Value: Sehr interessiert
+        <LabelCenter>k__BackingField:
+          Enabled: 1
+          Value: Weder uninteressiert noch interessiert.
+    - rid: 3882384442899562515
+      type: {class: SurveyQuestionDropdown, ns: Survey, asm: Assembly-CSharp}
+      data:
+        <Question>k__BackingField: "Besch\xE4ftigen Sie sich beruflich oder in Ihrer
+          Ausbildung mit Architektur oder Kunst?"
+        <Optional>k__BackingField: 0
+        <Options>k__BackingField:
+        - Ja, Kunst
+        - Ja, Architektur
+        - Ja, beides
+        - Nein
+        <RandomizeOrder>k__BackingField: 0
+    - rid: 3882384442899562516
+      type: {class: SurveyQuestionText, ns: Survey, asm: Assembly-CSharp}
+      data:
+        <Question>k__BackingField: "Welchen Architekturstil w\xFCrden Sie den Begriffen
+          Volute, Pilaster, gesprengter Giebel und Kolossalordnung zuordnen?"
+        <Optional>k__BackingField: 1
+    - rid: 3882384442899562517
+      type: {class: SurveyQuestionText, ns: Survey, asm: Assembly-CSharp}
+      data:
+        <Question>k__BackingField: "Welchen Architekturstil w\xFCrden Sie den Begriffen
+          Wimperge, Pinakel, Kreuzblume und Strebenb\xF6gen zuordnen?"
+        <Optional>k__BackingField: 1
+    - rid: 3882384442899562518
+      type: {class: SurveyQuestionText, ns: Survey, asm: Assembly-CSharp}
+      data:
+        <Question>k__BackingField: "Vielen Dank f\xFCr Ihre Zeit, haben Sie noch
+          irgendwelche Anmerkungen?"
+        <Optional>k__BackingField: 1

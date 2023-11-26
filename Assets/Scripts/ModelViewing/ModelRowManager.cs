@@ -24,7 +24,7 @@ namespace ModelViewing {
             if (!_distance.Enabled) return;
             for (int index = 0; index < _instances.Length; index++) {
                 if (_instances[index] == null) continue;
-                _instances[index].transform.localPosition = Vector3.right * _distance.Value * index;
+                _instances[index].transform.localPosition = Vector3.forward * _distance.Value * index;
             }
         }
         

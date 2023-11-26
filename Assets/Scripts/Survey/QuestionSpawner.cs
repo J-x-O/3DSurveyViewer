@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using JescoDev.Utility.EventUtility.EventUtility;
 using Survey.Handler;
 using TMPro;
@@ -20,6 +21,7 @@ namespace Survey {
         
         public string Title => _title.text;
         
+        public IEnumerable<SurveyQuestionHandler> QuestionHandlers => _instances.OfType<SurveyQuestionHandler>();
         public IReadOnlyList<SurveyHandler> Handlers => _instances;
         private readonly List<SurveyHandler> _instances = new List<SurveyHandler>();
         
@@ -34,15 +36,15 @@ namespace Survey {
             OnHandlersCleared.TryInvoke();
         }
         
-        public void Spawn(IEnumerable<SurveyQuestion> questions) {
+        public void Spawn(IEnumerable<ISurveyElement> questions) {
             Clear();
-            foreach (SurveyQuestion question in questions) {
+            foreach (ISurveyElement question in questions) {
                 Spawn(question);
             }
             OnHandlersSpawned.TryInvoke();
         }
         
-        private void Spawn(SurveyQuestion question) {
+        private void Spawn(ISurveyElement question) {
             SurveyHandler prefab = _prefabs.Find(p => p.GetSurveyType() == question.GetType());
             if (prefab == null) {
                 Instantiate(_errorPrefab, _parent);
@@ -50,7 +52,7 @@ namespace Survey {
                 return;
             }
             SurveyHandler instance = Instantiate(prefab, _parent);
-            instance.AssignQuestionData(question);
+            instance.AssignElementData(question);
             _instances.Add(instance);
         }
 

@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &6768309032060501518
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1368431039838458641, guid: ebf37761a4b657645bfa29b08e5eccf6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1368431039838458641, guid: ebf37761a4b657645bfa29b08e5eccf6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 30.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 1368431039838458641, guid: ebf37761a4b657645bfa29b08e5eccf6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1368431039838458641, guid: ebf37761a4b657645bfa29b08e5eccf6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.0000006258487
+      objectReference: {fileID: 0}
+    - target: {fileID: 1368431039838458641, guid: ebf37761a4b657645bfa29b08e5eccf6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1368431039838458641, guid: ebf37761a4b657645bfa29b08e5eccf6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1368431039838458641, guid: ebf37761a4b657645bfa29b08e5eccf6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1368431039838458641, guid: ebf37761a4b657645bfa29b08e5eccf6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1368431039838458641, guid: ebf37761a4b657645bfa29b08e5eccf6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1368431039838458641, guid: ebf37761a4b657645bfa29b08e5eccf6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1444159002590636219, guid: ebf37761a4b657645bfa29b08e5eccf6, type: 3}
+      propertyPath: m_Name
+      value: FocusTower Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6363037936345826179, guid: ebf37761a4b657645bfa29b08e5eccf6, type: 3}
+      propertyPath: managedReferences[3882384399044444162]._maxRadius
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6363037936345826179, guid: ebf37761a4b657645bfa29b08e5eccf6, type: 3}
+      propertyPath: managedReferences[3882384399044444162]._minRadius
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6363037936345826179, guid: ebf37761a4b657645bfa29b08e5eccf6, type: 3}
+      propertyPath: managedReferences[3882384399044444160]._lowerBound
+      value: -4.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 6363037936345826179, guid: ebf37761a4b657645bfa29b08e5eccf6, type: 3}
+      propertyPath: <Settings>k__BackingField.<StartPosition>k__BackingField.Radius
+      value: 9
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ebf37761a4b657645bfa29b08e5eccf6, type: 3}

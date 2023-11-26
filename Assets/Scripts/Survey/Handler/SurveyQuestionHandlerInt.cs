@@ -3,7 +3,7 @@ using TMPro;
 using UnityEngine;
 
 namespace Survey.Handler {
-    public class SurveyHandlerInt : GenericSurveyHandler<SurveyQuestionInt> {
+    public class SurveyQuestionHandlerInt : GenericSurveyQuestionHandler<SurveyQuestionInt> {
         
         public override event Action OnValueChanged;
         public override event Action OnInputValid;

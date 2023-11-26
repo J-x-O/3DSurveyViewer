@@ -8,7 +8,7 @@ namespace Focus.CameraLimitations {
         
         private const float EDGE = Mathf.PI / 2 * 0.99f;
         
-        public SphericalPosition Apply(SphericalPosition position) {
+        public SphericalPosition Apply(SphericalPosition position, Vector3 worldPosition) {
             position.Pitch = Mathf.Clamp(position.Pitch, -EDGE, EDGE);
             return position;
         }

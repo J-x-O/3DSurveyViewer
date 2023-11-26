@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using Focus.CameraDisable;
 using Focus.CameraLimitations;
 using JescoDev.Utility.EventUtility.EventUtility;
 using UnityEngine;
@@ -17,6 +18,8 @@ namespace Focus {
         [SerializeField] private float _zoomSpeed = 0.3f;
         public float TransitionTime => _transitionTime;
         [SerializeField] private float _transitionTime = 0.5f;
+        
+        [SerializeReference, SubclassSelector] private IDisableCam _disable;
         
         // focus data, where is our camera pointed
         public IFocusable CurrentFocus { get; private set; }
@@ -59,6 +62,7 @@ namespace Focus {
             
             if(CurrentFocus == null) return;
             if (IsSwitchingTargets) return;
+            if(_disable?.ShouldDisableCamera() ?? false) return;
             
             UpdateYawPitch();
             UpdateRadius();
@@ -89,7 +93,7 @@ namespace Focus {
 
         private void ApplyLimitations() {
             foreach (ILimitation limitation in CurrentFocus.Settings.Limitations) {
-                _sphericalPosition = limitation.Apply(_sphericalPosition);
+                _sphericalPosition = limitation.Apply(_sphericalPosition, CurrentFocus.WorldPosition);
             }
         }
 

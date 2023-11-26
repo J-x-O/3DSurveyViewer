@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using UnityEngine;
+using Utility;
 
 namespace Survey.Handler {
-    public class SurveyHandlerDropdown : GenericSurveyHandler<SurveyQuestionDropdown> {
+    public class SurveyQuestionHandlerDropdown : GenericSurveyQuestionHandler<SurveyQuestionDropdown> {
 
         public override event Action OnValueChanged;
         public override event Action OnInputValid;
@@ -28,6 +29,7 @@ namespace Survey.Handler {
         public override void AssignQuestionData(SurveyQuestionDropdown data) {
             _dropdown.options = data.Options
                 .Select(option => new TMP_Dropdown.OptionData(option))
+                .ShuffleIf(data.RandomizeOrder)
                 .Prepend(new TMP_Dropdown.OptionData("Select an option"))
                 .ToList();
         }

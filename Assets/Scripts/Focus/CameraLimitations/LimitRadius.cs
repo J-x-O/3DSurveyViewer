@@ -9,7 +9,7 @@ namespace Focus.CameraLimitations {
         [SerializeField] private float _minRadius = 0.01f;
         [SerializeField] private float _maxRadius = 1;
         
-        public SphericalPosition Apply(SphericalPosition position) {
+        public SphericalPosition Apply(SphericalPosition position, Vector3 worldPosition) {
             position.Radius = Mathf.Clamp(position.Radius, _minRadius, _maxRadius);
             return position;
         }

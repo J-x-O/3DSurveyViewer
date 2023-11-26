@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 namespace Survey.Handler {
-    public class SurveyHandlerLinearScale : GenericSurveyHandler<SurveyQuestionLinearScale> {
+    public class SurveyQuestionHandlerLinearScale : GenericSurveyQuestionHandler<SurveyQuestionLinearScale> {
 
         public override event Action OnValueChanged;
         public override event Action OnInputValid;
@@ -16,6 +16,7 @@ namespace Survey.Handler {
         [SerializeField] private TMP_Text _labelFrom;
         [SerializeField] private Slider _slider;
         [SerializeField] private TMP_Text _labelTo;
+        [SerializeField] private TMP_Text _labelCenter;
 
         private bool _anyInput;
         
@@ -33,6 +34,7 @@ namespace Survey.Handler {
             _slider.minValue = data.From;
             _slider.maxValue = data.To;
             ApplyLabel(_labelTo, data.LabelTo);
+            ApplyLabel(_labelCenter, data.LabelCenter);
             ResetInput();
         }
         

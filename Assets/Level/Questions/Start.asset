@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 321853fb0c204551965bf8acfefab9cd, type: 3}
+  m_Name: Start
+  m_EditorClassIdentifier: 
+  _questions:
+  - rid: 3882384442899562496
+  - rid: 3882384442899562498
+  - rid: 3882384442899562499
+  references:
+    version: 2
+    RefIds:
+    - rid: 3882384442899562496
+      type: {class: SurveyLabel, ns: Survey, asm: Assembly-CSharp}
+      data:
+        <Text>k__BackingField: "Vielen Dank f\xFCr die Teilnahme an dieser Befragung.
+          In dieser Umfrage werden Ihnen verschiedene Modelle von Geb\xE4uden pr\xE4sentiert
+          und Fragen dazu gestellt. Die Geb\xE4ude lassen sich mithilfe der rechten
+          Maustaste drehen und mit dem Mausrad kann rein- und rausgezoomt werden.
+          An jedem dieser Geb\xE4ude befinden sich spezielle Punkte, die genauer
+          betrachtet werden k\xF6nnen. Unten links k\xF6nnen sie immer wieder in
+          die Gesamtansicht zur\xFCckkehren. Ich w\xFCnsche Ihnen viel Spa\xDF und
+          vielen Dank f\xFCr Ihre Zeit."
+    - rid: 3882384442899562498
+      type: {class: SurveyQuestionInt, ns: Survey, asm: Assembly-CSharp}
+      data:
+        <Question>k__BackingField: Wie alt sind Sie?
+        <Optional>k__BackingField: 1
+        <DefaultValue>k__BackingField: 0
+        <Minimum>k__BackingField:
+          Enabled: 0
+          Value: 0
+        <Maximum>k__BackingField:
+          Enabled: 1
+          Value: 99
+    - rid: 3882384442899562499
+      type: {class: SurveyQuestionDropdown, ns: Survey, asm: Assembly-CSharp}
+      data:
+        <Question>k__BackingField: Sie sind...
+        <Optional>k__BackingField: 0
+        <Options>k__BackingField:
+        - "m\xE4nnlich"
+        - weiblich
+        - divers
+        - keine Angabe
+        <RandomizeOrder>k__BackingField: 0

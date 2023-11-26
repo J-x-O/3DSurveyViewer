@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3475604438308230217, guid: 1f659c9381bb6ca4a8b565d04c242e97, type: 3}
       propertyPath: m_Name
-      value: FocusDoor Variant
+      value: FocusFloor
       objectReference: {fileID: 0}
     - target: {fileID: 3948770545038421987, guid: 1f659c9381bb6ca4a8b565d04c242e97, type: 3}
       propertyPath: m_LocalPosition.x
@@ -73,6 +73,10 @@ PrefabInstance:
       value: Assembly-CSharp Focus.CameraLimitations.LimitYaw
       objectReference: {fileID: 0}
     - target: {fileID: 8971012601458769777, guid: 1f659c9381bb6ca4a8b565d04c242e97, type: 3}
+      propertyPath: managedReferences[3882384432608051204]
+      value: Assembly-CSharp Focus.CameraLimitations.LimitLowerWorld
+      objectReference: {fileID: 0}
+    - target: {fileID: 8971012601458769777, guid: 1f659c9381bb6ca4a8b565d04c242e97, type: 3}
       propertyPath: managedReferences[3882384417144963072]._maxYaw
       value: 90
       objectReference: {fileID: 0}
@@ -105,6 +109,10 @@ PrefabInstance:
       value: -3.6
       objectReference: {fileID: 0}
     - target: {fileID: 8971012601458769777, guid: 1f659c9381bb6ca4a8b565d04c242e97, type: 3}
+      propertyPath: managedReferences[3882384432608051204]._lowerBound
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8971012601458769777, guid: 1f659c9381bb6ca4a8b565d04c242e97, type: 3}
       propertyPath: <Settings>k__BackingField._limitations.Array.data[1]
       value: 3882384399044444162
       objectReference: {fileID: 0}
@@ -114,7 +122,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8971012601458769777, guid: 1f659c9381bb6ca4a8b565d04c242e97, type: 3}
       propertyPath: <Settings>k__BackingField._limitations.Array.data[3]
-      value: 3882384399044444160
+      value: 3882384432608051204
       objectReference: {fileID: 0}
     - target: {fileID: 8971012601458769777, guid: 1f659c9381bb6ca4a8b565d04c242e97, type: 3}
       propertyPath: <Settings>k__BackingField.<StartPosition>k__BackingField.Yaw

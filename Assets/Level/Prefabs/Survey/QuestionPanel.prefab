@@ -298,7 +298,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.34509805, g: 0.9529412, b: 0.3764706, a: 1}
+  m_Color: {r: 0.34509805, g: 0.95294124, b: 0.37647063, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -329,6 +329,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _handler: {fileID: 0}
   _image: {fileID: 6617687441186929253}
+  _disabledColor: {r: 0.8196079, g: 0.8196079, b: 0.8196079, a: 1}
   _successColor: {r: 0.34517616, g: 0.9528302, b: 0.37783557, a: 1}
   _failureColor: {r: 0.9433962, g: 0.28835884, b: 0.28835884, a: 1}
 --- !u!1001 &633822615468424889

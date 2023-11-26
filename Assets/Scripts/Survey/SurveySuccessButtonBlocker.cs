@@ -14,14 +14,15 @@ namespace Survey {
         private void OnDisable() => _handler.OnHandlersSpawned -= HandleHandlersSpawned;
 
         private void HandleHandlersSpawned() {
-            foreach (SurveyHandler handler in _handler.Handlers) {
+            foreach (SurveyQuestionHandler handler in _handler.QuestionHandlers) {
                 handler.OnValueChanged += Reevaluate;
             }
             Reevaluate();
         }
 
         private void Reevaluate() {
-            _target.interactable = _handler.Handlers.All(handler => handler.IsInputValid());
+            _target.interactable = _handler.QuestionHandlers
+                .All(handler => handler.Optional || handler.IsInputValid());
         }
     }
 }

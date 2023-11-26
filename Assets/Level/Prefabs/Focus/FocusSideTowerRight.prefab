@@ -1,0 +1,135 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &7009050839638537345
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 134742497721200128, guid: 9af46a4bee4450f49bea45d8738955f1, type: 3}
+      propertyPath: managedReferences[-2]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 134742497721200128, guid: 9af46a4bee4450f49bea45d8738955f1, type: 3}
+      propertyPath: managedReferences[3882384417144963074]
+      value: Assembly-CSharp Focus.CameraLimitations.LimitYaw
+      objectReference: {fileID: 0}
+    - target: {fileID: 134742497721200128, guid: 9af46a4bee4450f49bea45d8738955f1, type: 3}
+      propertyPath: managedReferences[3882384432608051210]
+      value: Assembly-CSharp Focus.CameraLimitations.LimitPitch
+      objectReference: {fileID: 0}
+    - target: {fileID: 134742497721200128, guid: 9af46a4bee4450f49bea45d8738955f1, type: 3}
+      propertyPath: managedReferences[3882384432608051211]
+      value: Assembly-CSharp Focus.CameraLimitations.LimitPitch
+      objectReference: {fileID: 0}
+    - target: {fileID: 134742497721200128, guid: 9af46a4bee4450f49bea45d8738955f1, type: 3}
+      propertyPath: managedReferences[3882384432608051212]
+      value: Assembly-CSharp Focus.CameraLimitations.LimitCylinder
+      objectReference: {fileID: 0}
+    - target: {fileID: 134742497721200128, guid: 9af46a4bee4450f49bea45d8738955f1, type: 3}
+      propertyPath: managedReferences[3882384432608051214]
+      value: Assembly-CSharp Focus.CameraLimitations.LimitLowerWorld
+      objectReference: {fileID: 0}
+    - target: {fileID: 134742497721200128, guid: 9af46a4bee4450f49bea45d8738955f1, type: 3}
+      propertyPath: managedReferences[3882384417144963074]._maxYaw
+      value: 155
+      objectReference: {fileID: 0}
+    - target: {fileID: 134742497721200128, guid: 9af46a4bee4450f49bea45d8738955f1, type: 3}
+      propertyPath: managedReferences[3882384417144963074]._minYaw
+      value: -100
+      objectReference: {fileID: 0}
+    - target: {fileID: 134742497721200128, guid: 9af46a4bee4450f49bea45d8738955f1, type: 3}
+      propertyPath: managedReferences[3882384432608051212]._radius
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 134742497721200128, guid: 9af46a4bee4450f49bea45d8738955f1, type: 3}
+      propertyPath: managedReferences[3882384432608051210]._maxPitch
+      value: 89
+      objectReference: {fileID: 0}
+    - target: {fileID: 134742497721200128, guid: 9af46a4bee4450f49bea45d8738955f1, type: 3}
+      propertyPath: managedReferences[3882384432608051210]._minPitch
+      value: -89
+      objectReference: {fileID: 0}
+    - target: {fileID: 134742497721200128, guid: 9af46a4bee4450f49bea45d8738955f1, type: 3}
+      propertyPath: managedReferences[3882384432608051211]._maxPitch
+      value: 85.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 134742497721200128, guid: 9af46a4bee4450f49bea45d8738955f1, type: 3}
+      propertyPath: managedReferences[3882384432608051211]._minPitch
+      value: -58
+      objectReference: {fileID: 0}
+    - target: {fileID: 134742497721200128, guid: 9af46a4bee4450f49bea45d8738955f1, type: 3}
+      propertyPath: <Settings>k__BackingField._limitations.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 134742497721200128, guid: 9af46a4bee4450f49bea45d8738955f1, type: 3}
+      propertyPath: managedReferences[3882384399044444162]._minRadius
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 134742497721200128, guid: 9af46a4bee4450f49bea45d8738955f1, type: 3}
+      propertyPath: managedReferences[3882384432608051214]._lowerBound
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 134742497721200128, guid: 9af46a4bee4450f49bea45d8738955f1, type: 3}
+      propertyPath: <Settings>k__BackingField._limitations.Array.data[3]
+      value: 3882384432608051212
+      objectReference: {fileID: 0}
+    - target: {fileID: 134742497721200128, guid: 9af46a4bee4450f49bea45d8738955f1, type: 3}
+      propertyPath: <Settings>k__BackingField._limitations.Array.data[4]
+      value: 3882384432608051214
+      objectReference: {fileID: 0}
+    - target: {fileID: 134742497721200128, guid: 9af46a4bee4450f49bea45d8738955f1, type: 3}
+      propertyPath: <Settings>k__BackingField.<StartPosition>k__BackingField.Yaw
+      value: 0.7853982
+      objectReference: {fileID: 0}
+    - target: {fileID: 5435029032428699282, guid: 9af46a4bee4450f49bea45d8738955f1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5435029032428699282, guid: 9af46a4bee4450f49bea45d8738955f1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5435029032428699282, guid: 9af46a4bee4450f49bea45d8738955f1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5435029032428699282, guid: 9af46a4bee4450f49bea45d8738955f1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.0000006258487
+      objectReference: {fileID: 0}
+    - target: {fileID: 5435029032428699282, guid: 9af46a4bee4450f49bea45d8738955f1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5435029032428699282, guid: 9af46a4bee4450f49bea45d8738955f1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5435029032428699282, guid: 9af46a4bee4450f49bea45d8738955f1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5435029032428699282, guid: 9af46a4bee4450f49bea45d8738955f1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5435029032428699282, guid: 9af46a4bee4450f49bea45d8738955f1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5435029032428699282, guid: 9af46a4bee4450f49bea45d8738955f1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5591799660788352312, guid: 9af46a4bee4450f49bea45d8738955f1, type: 3}
+      propertyPath: m_Name
+      value: FocusSideTowerRight
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9af46a4bee4450f49bea45d8738955f1, type: 3}

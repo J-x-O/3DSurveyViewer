@@ -9,6 +9,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 5883371027901992276, guid: 14d698c6ebd2919419079dc706a8050e, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5883371027901992276, guid: 14d698c6ebd2919419079dc706a8050e, type: 3}
       propertyPath: m_Name
       value: FocusDefault
       objectReference: {fileID: 0}

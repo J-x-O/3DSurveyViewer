@@ -58,7 +58,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5543712650581265159, guid: 23c630fd1f1aabe44abd4f5fd5b93d31, type: 3}
       propertyPath: m_Name
-      value: SurveyHandlerInt Variant
+      value: SurveyHandlerInt
       objectReference: {fileID: 0}
     - target: {fileID: 7243944857659915641, guid: 23c630fd1f1aabe44abd4f5fd5b93d31, type: 3}
       propertyPath: _handler

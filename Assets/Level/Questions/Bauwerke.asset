@@ -1,0 +1,190 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 321853fb0c204551965bf8acfefab9cd, type: 3}
+  m_Name: Bauwerke
+  m_EditorClassIdentifier: 
+  _questions:
+  - rid: 3882384442899562501
+  - rid: 3882384442899562512
+  - rid: 3882384442899562504
+  - rid: 3882384442899562505
+  - rid: 3882384442899562506
+  - rid: 3882384442899562507
+  - rid: 3882384442899562500
+  - rid: 3882384442899562510
+  - rid: 3882384442899562509
+  - rid: 3882384442899562508
+  references:
+    version: 2
+    RefIds:
+    - rid: 3882384442899562500
+      type: {class: SurveyQuestionDropdown, ns: Survey, asm: Assembly-CSharp}
+      data:
+        <Question>k__BackingField: "Was denken Sie, wof\xFCr wird dieses Geb\xE4ude
+          benutzt?"
+        <Optional>k__BackingField: 0
+        <Options>k__BackingField:
+        - "als Wohngeb\xE4ude"
+        - als Arbeitsplatz
+        - "als Kulturst\xE4tte"
+        - als Bildungseinrichtung
+        - als Sakralbau
+        <RandomizeOrder>k__BackingField: 1
+    - rid: 3882384442899562501
+      type: {class: SurveyQuestionLinearScale, ns: Survey, asm: Assembly-CSharp}
+      data:
+        <Question>k__BackingField: "Empfinden Sie das Geb\xE4ude als eher modern
+          oder historisch?"
+        <Optional>k__BackingField: 0
+        <From>k__BackingField: 1
+        <LabelFrom>k__BackingField:
+          Enabled: 1
+          Value: Historisch
+        <To>k__BackingField: 5
+        <LabelTo>k__BackingField:
+          Enabled: 1
+          Value: Modern
+        <LabelCenter>k__BackingField:
+          Enabled: 0
+          Value: 
+    - rid: 3882384442899562504
+      type: {class: SurveyQuestionLinearScale, ns: Survey, asm: Assembly-CSharp}
+      data:
+        <Question>k__BackingField: "K\xF6nnen Sie sich vorstellen, dass Menschen
+          in diesem Geb\xE4ude wohnen?"
+        <Optional>k__BackingField: 0
+        <From>k__BackingField: 1
+        <LabelFrom>k__BackingField:
+          Enabled: 1
+          Value: 'Stimme gar nicht zu '
+        <To>k__BackingField: 5
+        <LabelTo>k__BackingField:
+          Enabled: 1
+          Value: Stimme voll und ganz zu
+        <LabelCenter>k__BackingField:
+          Enabled: 1
+          Value: ' Weder Wiederspruch noch Zustimmung'
+    - rid: 3882384442899562505
+      type: {class: SurveyQuestionLinearScale, ns: Survey, asm: Assembly-CSharp}
+      data:
+        <Question>k__BackingField: "K\xF6nnen Sie sich vorstellen, dass Menschen
+          in diesem Geb\xE4ude arbeiten?"
+        <Optional>k__BackingField: 0
+        <From>k__BackingField: 1
+        <LabelFrom>k__BackingField:
+          Enabled: 1
+          Value: Stimme gar nicht zu
+        <To>k__BackingField: 5
+        <LabelTo>k__BackingField:
+          Enabled: 1
+          Value: Stimme voll und ganz zu
+        <LabelCenter>k__BackingField:
+          Enabled: 1
+          Value: Weder Widerspruch noch Zustimmung
+    - rid: 3882384442899562506
+      type: {class: SurveyQuestionDropdown, ns: Survey, asm: Assembly-CSharp}
+      data:
+        <Question>k__BackingField: "In welchem Teil der Welt w\xFCrden Sie das gezeigte
+          Geb\xE4ude erwarten?"
+        <Optional>k__BackingField: 0
+        <Options>k__BackingField:
+        - Asien
+        - Nordamerika
+        - Europa
+        - "S\xFCdamerika"
+        - Afrika
+        - Australien
+        <RandomizeOrder>k__BackingField: 1
+    - rid: 3882384442899562507
+      type: {class: SurveyQuestionLinearScale, ns: Survey, asm: Assembly-CSharp}
+      data:
+        <Question>k__BackingField: "Dieses Geb\xE4ude steht in einer eher wohlhabenden
+          Gegend."
+        <Optional>k__BackingField: 0
+        <From>k__BackingField: 1
+        <LabelFrom>k__BackingField:
+          Enabled: 1
+          Value: Stimme gar nicht zu
+        <To>k__BackingField: 5
+        <LabelTo>k__BackingField:
+          Enabled: 1
+          Value: Stimme voll und ganz zu
+        <LabelCenter>k__BackingField:
+          Enabled: 1
+          Value: Weder Widerspruch noch Zustimmung
+    - rid: 3882384442899562508
+      type: {class: SurveyQuestionLinearScale, ns: Survey, asm: Assembly-CSharp}
+      data:
+        <Question>k__BackingField: "Dieses Geb\xE4ude k\xF6nnte ein spezieller Orientierungspunkt
+          innerhalb eines Videospiels oder einer virtuellen Umgebung sein."
+        <Optional>k__BackingField: 0
+        <From>k__BackingField: 1
+        <LabelFrom>k__BackingField:
+          Enabled: 1
+          Value: 'Stimme gar nicht zu '
+        <To>k__BackingField: 5
+        <LabelTo>k__BackingField:
+          Enabled: 1
+          Value: Stimme voll und ganz zu
+        <LabelCenter>k__BackingField:
+          Enabled: 1
+          Value: Weder Widerspruch noch Zustimmung
+    - rid: 3882384442899562509
+      type: {class: SurveyQuestionLinearScale, ns: Survey, asm: Assembly-CSharp}
+      data:
+        <Question>k__BackingField: "Innerhalb eines Videospiels oder einer virtuellen
+          Umgebung w\xE4re dieses Geb\xE4ude interesant. "
+        <Optional>k__BackingField: 0
+        <From>k__BackingField: 1
+        <LabelFrom>k__BackingField:
+          Enabled: 1
+          Value: Stimme gar nicht zu
+        <To>k__BackingField: 5
+        <LabelTo>k__BackingField:
+          Enabled: 1
+          Value: Stimme voll und ganz zu
+        <LabelCenter>k__BackingField:
+          Enabled: 1
+          Value: Weder Widerspruch noch Zustimmung
+    - rid: 3882384442899562510
+      type: {class: SurveyQuestionDropdown, ns: Survey, asm: Assembly-CSharp}
+      data:
+        <Question>k__BackingField: "Wenn Sie sich in einer virtuellen Umgebung, z.B.
+          in einem Videospiel befinden w\xFCrden, welche Funktion sollte dieses Geb\xE4ude
+          dort erf\xFCllen?"
+        <Optional>k__BackingField: 0
+        <Options>k__BackingField:
+        - Einfamilienhaus
+        - "B\xFCrogeb\xE4ude"
+        - Wohnblock
+        - Lagerhalle
+        - Kirche
+        - Teil einer Schlossanlage
+        - "Versammlungsst\xE4tte"
+        <RandomizeOrder>k__BackingField: 1
+    - rid: 3882384442899562512
+      type: {class: SurveyQuestionLinearScale, ns: Survey, asm: Assembly-CSharp}
+      data:
+        <Question>k__BackingField: "Empfinden Sie das Geb\xE4ude als eher sakral
+          oder weltlich?"
+        <Optional>k__BackingField: 0
+        <From>k__BackingField: 1
+        <LabelFrom>k__BackingField:
+          Enabled: 1
+          Value: Sakral
+        <To>k__BackingField: 5
+        <LabelTo>k__BackingField:
+          Enabled: 1
+          Value: Weltlich
+        <LabelCenter>k__BackingField:
+          Enabled: 0
+          Value: 
